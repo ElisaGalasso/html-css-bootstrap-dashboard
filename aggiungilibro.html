@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuovo libro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--header-->
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/duck.png" alt="Logo duck" width="40" height="40" class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link text-white active" aria-current="page" href="#">Catalogo libri</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active text-white-50" aria-current="page" href="#"> Anagrafica Utenti</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active text-white-50" aria-current="page" href="#"> Storico Prestiti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white-50" aria-current="page" href="#"> Help</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+        </header>
+
+        <!--main-->
+        <main>
+            <div class=" container m-5">
+                <h2>Nuovo Libro</h2>
+                
+            
+            
+
+                <form>
+
+                    <!-- nome e cognome autore -->
+
+                    <div class="row mt-4">
+                        <div class="col col-lg-6">
+                            <label or="-nome-autore" class="form-label">Nome Autore</label>
+                            <input
+                            type="text"
+                            class="form-control"
+                            name="nome-autore"
+                            id="nome-autore"
+                            aria-describedby="nameHelper"
+                            placeholder="Inserisci il nome dell'autore" />
+                        </div>
+
+                        <div class="col col-lg-6">
+                            <label or="-cognome-autore" class="form-label">Cognome Autore</label>
+                            <input
+                            type="text"
+                            class="form-control"
+                            name="cognome-autore"
+                            id="cognome-autore"
+                            aria-describedby="nameHelper"
+                            placeholder="Inserisci il cognome dell'autore" />
+                        </div>
+                    </div>
+
+                    <!-- titolo libro-->
+
+                    <div class="row mt-4">
+                        <div class="col col-lg-12">
+                            <label or="-titolo" class="form-label">Titolo</label>
+                            <input
+                            type="text"
+                            class="form-control"
+                            name="titolo"
+                            id="titolo"
+                            aria-describedby="nameHelper"
+                            placeholder="Inserisci il titolo del libro" />
+                            <small id="nameHelper" class="form-text text-muted">Titolo versione italiana</small>
+                        </div>
+                    </div>
+
+                    <!-- genere -->
+
+                    <div class="row">
+                        <div class="col-12 col-lg-4 mt-4">
+                                <label for="" class="form-label">Genere</label>
+                                <select
+                                    class="form-select form-select"
+                                    name="genere"
+                                    id="genere"
+                                >
+                                    <option selected>Scegli il genere</option>
+                                    <option value="">Giallo</option>
+                                    <option value="">Romantico</option>
+                                    <option value="">Autobiografico</option>
+                                </select>
+                        </div>
+
+                        <!-- anno di pubblicazione -->
+
+                        <div class="col-12 col-lg-4 mt-4">
+                                <label or="-anno" class="form-label">Anno di Pubblicazione</label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                name="anno"
+                                id="anno"
+                                aria-describedby="nameHelper"
+                                placeholder="Inserisci l'anno" />
+                        </div>
+
+                        <!-- ISBN# -->
+
+                        <div class="col-12 col-lg-4 mt-4">
+                                <label or="-isbn" class="form-label">ISBN#</label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                name="isbn"
+                                id="isbn"
+                                aria-describedby="nameHelper"
+                                placeholder="Inserisci il codice ISBN#" />
+                        </div>
+
+                    </div>
+
+                    <hr class="mt-5"> </form>
+
+                        <!-- text area -->
+
+                        <div class="col col-lg-12 mt-4">
+                            <label for="message" class="form-label">Note</label>
+                            <textarea 
+                            class="form-control" 
+                            name="message" 
+                            id="message" 
+                            rows="4"
+                            placeholder="Inserisci eventuali note sul libro"></textarea>
+                        </div>
+
+
+                        <div class="col col-lg-12 mt-4">
+                            <input 
+                            class="form-check-input" 
+                            type="checkbox" 
+                            value="" 
+                            id="checkChecked" 
+                            checked>
+                            <label class="form-check-label" for="checkChecked">Disponibile anche in digitale</label>
+                        </div>
+
+                        <div class="mt-4">
+                            <button
+                            type="submit"
+                            class="btn btn-primary">
+                            <i class="bi bi-book"></i> Aggiungi Libro
+                            </button>
+                        </div>
+                
+                </form>
+            </div>
+
+        </main>
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+</body>
+</html>
